@@ -1,172 +1,107 @@
-/* Reset CSS cơ bản */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth; /* Cuộn trang mượt mà */
-}
-
-body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #fcfcfc;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Thanh điều hướng */
-header {
-    background-color: #1a3a2a; /* Màu xanh lá đậm như ảnh bài tập */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
+/* --- CSS BỔ SUNG CHO TRANG CÁ NHÂN --- */
+.profile-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-nav .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #a3e635;
-}
-
-/* Các Section chung */
-.section {
-    padding: 80px 0;
-}
-
-.bg-light {
-    background-color: #f4f6f4;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #1a3a2a;
-    position: relative;
-}
-
-/* Trang Giới thiệu (Hero) */
-.hero {
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 36px;
-    color: #1a3a2a;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #4b6b5b;
-    margin-bottom: 30px;
-}
-
-.bio-content h3 {
+    flex-wrap: wrap;
+    gap: 40px;
     margin-top: 20px;
+}
+
+.profile-sidebar {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.profile-avatar img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2e7d32;
+    margin-bottom: 20px;
+}
+
+.profile-contact {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-contact h3 {
+    font-size: 18px;
     color: #1a3a2a;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.bio-content ul {
-    margin-left: 20px;
+.profile-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-/* Lưới Dự án */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.profile-contact i {
+    width: 20px;
+    color: #2e7d32;
+    margin-right: 10px;
 }
 
-.project-card {
+.profile-main {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-block {
     background: #fff;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-top: 4px solid #2e7d32;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.project-card h3 {
+.profile-block h3 {
     color: #1a3a2a;
     margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.project-card p {
-    font-size: 14px;
-    margin-bottom: 10px;
+.profile-block h3 i {
+    color: #2e7d32;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #2e7d32;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    transition: background 0.3s;
+.timeline-item h4 {
+    color: #333;
+    font-size: 16px;
 }
 
-.btn:hover {
-    background-color: #1b5e20;
+.timeline-item .duration {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 5px;
 }
 
-/* Trang Tổng kết */
-.summary-content p {
-    margin-bottom: 15px;
-    background: #fff;
-    padding: 15px;
-    border-left: 5px solid #2e7d32;
-    border-radius: 0 4px 4px 0;
+/* Thẻ kỹ năng */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: #1a3a2a;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+.tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
