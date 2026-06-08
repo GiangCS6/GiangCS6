@@ -3,88 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cá Nhân</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Thêm bộ icon từ FontAwesome để trang trí cho đẹp (tùy chọn) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Thanh điều hướng (Menu) -->
     <header>
         <nav>
             <div class="logo">My Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#gioi-thieu">Giới Thiệu</a></li>
+                <li><a href="#trang-ca-nhan">Trang Cá Nhân</a></li>
                 <li><a href="#du-an">Dự Án</a></li>
                 <li><a href="#tong-ket">Tổng Kết</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- 1. TRANG GIỚI THIỆU (Theo yêu cầu bài tập) -->
     <section id="gioi-thieu" class="section hero">
         <div class="container">
-            <h1>Xin chào, mình là [Họ và Tên của bạn]</h1>
-            <p class="subtitle">Sinh viên ngành: [Tên ngành học của bạn]</p>
+            <h1>Xin chào, mình là Vũ Trường Giang</h1>
+            <p class="subtitle">Sinh viên ngành: Khoa học máy tính</p>
             
             <div class="bio-content">
-                <h3>Về bản thân</h3>
-                <p>Sở thích: [Điền sở thích của bạn vào đây, ví dụ: Đọc sách, công nghệ, thiết kế...]</p>
-                
-                <h3>Mục tiêu học tập & Định hướng phát triển</h3>
-                <p>[Điền mục tiêu học tập ngắn hạn/dài hạn và định hướng nghề nghiệp tương lai của bạn].</p>
-                
-                <h3>Mục tiêu của Portfolio</h3>
-                <ul>
-                    <li>Thể hiện các kỹ năng số đã học trong môn học.</li>
-                    <li>Lưu trữ sản phẩm cá nhân để dễ dàng truy cập và chia sẻ.</li>
-                    <li>Tự đánh giá sự phát triển của bản thân qua từng chương học.</li>
-                </ul>
+                <p><strong>Mục tiêu học tập & Định hướng phát triển:</strong> [Điền mục tiêu học tập ngắn hạn/dài hạn và định hướng nghề nghiệp tương lai của bạn].</p>
+                <p style="margin-top: 10px;"><strong>Mục tiêu của Portfolio này:</strong> Thể hiện các kỹ năng số đã học, lưu trữ sản phẩm cá nhân để dễ dàng truy cập và chia sẻ[cite: 1].</p>
             </div>
         </div>
     </section>
 
+    <!-- BỔ SUNG: TRANG CÁ NHÂN CHI TIẾT (PROFILE / CV) -->
+    <section id="trang-ca-nhan" class="section bg-light">
+        <div class="container">
+            <h2>Trang Cá Nhân</h2>
+            <div class="profile-container">
+                <!-- Cột bên trái: Ảnh và thông tin liên hệ -->
+                <div class="profile-sidebar">
+                    <div class="profile-avatar">
+                        <!-- Bạn có thể thay link ảnh bên dưới bằng ảnh của bạn -->
+                        <img src="https://via.placeholder.com/150" alt="Ảnh chân dung">
+                    </div>
+                    <div class="profile-contact">
+                        <h3>Thông Tin Liên Hệ</h3>
+                        <p><i class="fas fa-envelope"></i> 25021744@vnu.edu.vn</p>
+                        <p><i class="fas fa-phone"></i>0388287266</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</p>
+                        <p><i class="fab fa-github"></i> github.com/GiangCS6</p>
+                    </div>
+                </div>
+                
+                <!-- Cột bên phải: Học vấn và Kỹ năng -->
+                <div class="profile-main">
+                    <div class="profile-block">
+                        <h3><i class="fas fa-graduation-cap"></i> Học Vấn</h3>
+                        <div class="timeline-item">
+                            <h4>Trường Đại học Công Nghệ</h4>
+                            <p class="duration">2024 - Hiện tại</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-block">
+                        <h3><i class="fas fa-tools"></i> Kỹ Năng Số & Công Nghệ</h3>
+                        <div class="skills-tags">
+                            <span class="tag">Tin học văn phòng</span>
+                            <span class="tag">Sử dụng AI (Prompt Engineering)</span>
+                            <span class="tag">Quản lý dự án trực tuyến</span>
+                            <span class="tag">HTML / CSS cơ bản</span>
+                            <span class="tag">Làm việc nhóm</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-block">
+                        <h3><i class="fas fa-heart"></i> Sở Thích Cá Nhân</h3>
+                        <p>Bóng rổ, Valorant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. TRANG DỰ ÁN (Theo yêu cầu bài tập) -->
     <section id="du-an" class="section">
         <div class="container">
             <h2>Các Dự Án / Bài Tập Đã Hoàn Thành</h2>
             <div class="projects-grid">
                 
+                <!-- Bài 1 -->
                 <div class="project-card">
-                    <h3>Bài 1: Máy tính và các thiết bị ngoại vi</h3>
-                    <p><strong>Mục đích:</strong> Thao tác cơ bản với tệp tin và thư mục, tối ưu hóa cấu trúc lưu trữ học tập.</p>
-                    <p><strong>Tóm tắt:</strong> Thiết lập cấu trúc thư mục khoa học, áp dụng quy tắc đặt tên file nghiêm ngặt.</p>
-                    <a href="link-anh-hoac-file-pdf-bai-1.pdf" target="_blank" class="btn">Xem sản phẩm (PDF/Ảnh)</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Bài 2: Khai thác dữ liệu và thông tin</h3>
-                    <p><strong>Mục đích:</strong> Tìm kiếm và đánh giá nguồn thông tin học thuật chuẩn xác.</p>
-                    <p><strong>Tóm tắt:</strong> Sử dụng các toán tử tìm kiếm nâng cao và lập bảng tiêu chí đánh giá độ uy tín nguồn tin.</p>
+                    <h3>Bài 1: Máy tính và các thiết bị ngoại vi[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Thao tác cơ bản với tệp tin và thư mục, tối ưu hóa cấu trúc lưu trữ học tập[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> Thiết lập cấu trúc thư mục khoa học, áp dụng quy tắc đặt tên file nghiêm ngặt[cite: 1].</p>
                     <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
                 </div>
 
+                <!-- Bài 2 -->
                 <div class="project-card">
-                    <h3>Bài 3: Tổng quan về trí tuệ nhân tạo</h3>
-                    <p><strong>Mục đích:</strong> Học cách viết Prompt hiệu quả để tối ưu hóa AI phục vụ học tập.</p>
-                    <p><strong>Tóm tắt:</strong> So sánh kết quả đầu ra giữa Prompt ban đầu và Prompt cải tiến theo công thức.</p>
+                    <h3>Bài 2: Khai thác dữ liệu và thông tin[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Tìm kiếm và đánh giá nguồn thông tin học thuật chuẩn xác[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> Sử dụng các toán tử tìm kiếm nâng cao và lập bảng tiêu chí đánh giá độ uy tín nguồn tin[cite: 1].</p>
                     <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
                 </div>
 
+                <!-- Bài 3 -->
                 <div class="project-card">
-                    <h3>Bài 4: Giao tiếp và hợp tác trong môi trường số</h3>
-                    <p><strong>Mục đích:</strong> Sử dụng công cụ trực tuyến phối hợp làm việc nhóm.</p>
-                    <p><strong>Tóm tắt:</strong> Minh chứng quy trình quản lý dự án nhóm bằng các công cụ số.</p>
+                    <h3>Bài 3: Tổng quan về trí tuệ nhân tạo[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Học cách viết Prompt hiệu quả để tối ưu hóa AI phục vụ học tập[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> So sánh kết quả đầu ra giữa Prompt ban đầu và Prompt cải tiến theo công thức[cite: 1].</p>
                     <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
                 </div>
 
+                <!-- Bài 4 -->
                 <div class="project-card">
-                    <h3>Bài 5: Sáng tạo nội dung số</h3>
-                    <p><strong>Mục đích:</strong> Ứng dụng AI tạo sinh để hỗ trợ tạo ra các sản phẩm truyền thông, nội dung số.</p>
-                    <p><strong>Tóm tắt:</strong> Trưng bày sản phẩm hình ảnh/video/bài viết được hoàn thiện dưới sự hỗ trợ của AI.</p>
+                    <h3>Bài 4: Giao tiếp và hợp tác trong môi trường số[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Sử dụng công cụ trực tuyến phối hợp làm việc nhóm[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> Minh chứng quy trình quản lý dự án nhóm bằng các công cụ số[cite: 1].</p>
                     <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
                 </div>
 
+                <!-- Bài 5 -->
                 <div class="project-card">
-                    <h3>Bài 6: An toàn và liêm chính học thuật</h3>
-                    <p><strong>Mục đích:</strong> Sử dụng AI có trách nhiệm và tuân thủ các quy tắc đạo đức công nghệ.</p>
-                    <p><strong>Tóm tắt:</strong> Xây dựng bộ nguyên tắc cá nhân khi nghiên cứu và trích dẫn tài liệu.</p>
+                    <h3>Bài 5: Sáng tạo nội dung số[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Ứng dụng AI tạo sinh để hỗ trợ tạo ra các sản phẩm truyền thông, nội dung số[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> Trưng bày sản phẩm hình ảnh/video/bài viết được hoàn thiện dưới sự hỗ trợ của AI[cite: 1].</p>
+                    <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
+                </div>
+
+                <!-- Bài 6 -->
+                <div class="project-card">
+                    <h3>Bài 6: An toàn và liêm chính học thuật[cite: 1]</h3>
+                    <p><strong>Mục đích:</strong> Sử dụng AI có trách nhiệm và tuân thủ các quy tắc đạo đức công nghệ[cite: 1].</p>
+                    <p><strong>Tóm tắt:</strong> Xây dựng bộ nguyên tắc cá nhân khi nghiên cứu và trích dẫn tài liệu[cite: 1].</p>
                     <a href="#" target="_blank" class="btn">Xem sản phẩm</a>
                 </div>
 
@@ -92,20 +144,22 @@
         </div>
     </section>
 
+    <!-- 3. TRANG TỔNG KẾT (Theo yêu cầu bài tập) -->
     <section id="tong-ket" class="section bg-light">
         <div class="container">
             <h2>Tổng Kết Dự Án</h2>
             <div class="summary-content">
-                <p><strong>Trải nghiệm cá nhân:</strong> [Điền cảm nhận của bạn sau khi trải qua chuỗi bài tập và hoàn thành portfolio].</p>
-                <p><strong>Kiến thức & Kỹ năng cốt lõi:</strong> [Nêu bật những điều quan trọng nhất bạn đã đúc kết được về công nghệ số và AI].</p>
-                <p><strong>Điểm tâm đắc & Thách thức:</strong> [Những gì bạn tự hào nhất và những khó khăn bạn đã vượt qua trong quá trình làm].</p>
+                <p><strong>Trải nghiệm cá nhân:</strong> [Điền cảm nhận của bạn sau khi trải qua chuỗi bài tập và hoàn thành portfolio][cite: 1].</p>
+                <p><strong>Kiến thức & Kỹ năng cốt lõi:</strong> [Nêu bật những điều quan trọng nhất bạn đã đúc kết được về công nghệ số và AI][cite: 1].</p>
+                <p><strong>Điểm tâm đắc & Thách thức:</strong> [Những gì bạn tự hào nhất và những khó khăn bạn đã vượt qua trong quá trình làm][cite: 1].</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Portfolio của [Tên Bạn]. Môn học: Nhập môn Công nghệ số và Ứng dụng AI.</p>
+            <p>&copy; 2026 Portfolio của Vũ Trường Giang. Môn học: Nhập môn Công nghệ số và Ứng dụng AI.</p>
         </div>
     </footer>
 
